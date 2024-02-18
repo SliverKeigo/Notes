@@ -8,7 +8,7 @@ main {
     padding: 10px;
     margin: 0 auto;
   }
-  
+
   header {
     display: flex;
     justify-content: space-between;
@@ -195,7 +195,7 @@ main {
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
   }
   
-  .cookieHeading {
+  .deleteConfirm {
     font-size: 1.2em;
     font-weight: 800;
     color: rgb(26, 26, 26);

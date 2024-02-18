@@ -21,8 +21,9 @@ const {
   <main>
     <div class="overlay" v-show="showModal">
       <div class="modal">
-        <textarea name="note" id="note" cols="30" rows="10" v-model.trim="newNote" maxlength="66"
-          style="font-size: 32px;"></textarea>
+        <textarea name="note" id="note" cols="15" rows="10" v-model.trim="newNote" maxlength="66" style="resize: none;">
+        </textarea>
+
         <p v-if="errorMsg"> {{ errorMsg }} </p>
         <button @click="addNote">Add Note</button>
         <button class="close" @click="showModal = false, errorMsg = ''">Close</button>
@@ -30,7 +31,7 @@ const {
     </div>
     <div class="overlay" v-show="showDeleteModal">
       <div class="deleteCard">
-        <p class="cookieHeading">Confirm deleting this note?</p>
+        <p class="deleteConfirm">Confirm deleting this note?</p>
         <br>
         <div class="buttonContainer">
           <button class="acceptButton" @click="confirmDelete = true, showDeleteModal = false">YES</button>
@@ -60,5 +61,5 @@ const {
 </template>
 
 <style scoped>
-    @import "./style/index.css"
+@import "./style/style.css"
 </style>
